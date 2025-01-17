@@ -1,0 +1,526 @@
+[
+    {
+      "question": "How do I reset my password?",
+      "answer": "Go to the login page and click on 'Forgot password'. Follow the steps to reset your password."
+    },
+    {
+      "question": "What are your support hours?",
+      "answer": "Our support hours are 9 AM to 5 PM, Monday through Friday."
+    },
+    {
+      "question": "How can I contact the support team?",
+      "answer": "You can contact the support team through our online contact form, or by calling 1234567890."
+    },
+    {
+      "question": "How do I check my order status?",
+      "answer": "You can check your order status on the order tracking page on our website."
+    },
+    {
+      "question": "What are the shipping options?",
+      "answer": "We offer multiple shipping options, such as 2 day, and 1 day delivery."
+    },
+    {
+      "question": "What payment methods do you accept?",
+      "answer": "We accept major credit cards (Visa, Mastercard, American Express), PayPal, and Apple Pay."
+    },
+    {
+      "question": "Can I return an item?",
+      "answer": "Yes, you can return items within 30 days of purchase, provided they are in their original condition. Please see our return policy for more details."
+    },
+    {
+      "question": "How long does shipping take?",
+      "answer": "Shipping times vary depending on your location and the shipping method you choose. Please see our shipping information page for more details."
+    },
+    {
+      "question": "Do you offer international shipping?",
+      "answer": "Yes, we offer international shipping to select countries. Please see our shipping page for the list of countries and rates."
+    },
+    {
+      "question": "How do I create an account?",
+      "answer": "You can create an account on our registration page, located on the navigation bar."
+    },
+    {
+      "question": "How do I apply a discount code?",
+      "answer": "You can apply a discount code at the checkout page. Make sure the discount code is valid for the purchase."
+    },
+    {
+      "question": "Can I edit my profile information?",
+      "answer": "Yes, you can edit your profile information on the user profile page."
+    },
+    {
+      "question": "Are there any warranties for products?",
+      "answer": "Yes, most of our products come with a one-year warranty. Please check the product description for specific details."
+    },
+    {
+      "question": "What is your privacy policy?",
+      "answer": "You can find our privacy policy on the 'Privacy Policy' page on the website."
+    },
+    {
+      "question": "How do I subscribe to your newsletter?",
+      "answer": "You can subscribe to the newsletter on the homepage, or on the newsletter page."
+    },
+    {
+      "question": "How can I cancel an order?",
+      "answer": "You can cancel an order if it hasn't shipped. Please contact customer support immediately."
+    },
+    {
+      "question": "How can I track my order?",
+      "answer": "You can track your order using your order number on our order tracking page."
+    },
+    {
+      "question": "Do you offer bulk discounts?",
+      "answer": "Yes, we offer bulk discounts for large orders. Please contact our sales team for more information."
+    },
+    {
+      "question": "What if my item is damaged on arrival?",
+      "answer": "If your item is damaged on arrival, contact customer support immediately to initiate a replacement."
+    },
+    {
+      "question": "How do I know if an item is in stock?",
+      "answer": "The item page should show the item's availability in stock. If you have any questions, contact us."
+    },
+    {
+      "question": "What do I do if I received the wrong item?",
+      "answer": "If you received the wrong item, please contact support so that they can send you the correct item."
+    },
+    {
+      "question": "How can I leave a review?",
+      "answer": "You can leave a review on the product page."
+    },
+    {
+      "question": "Can I change my shipping address?",
+      "answer": "You can change your shipping address before the item is shipped out."
+    },
+    {
+      "question": "Do you have a mobile app?",
+      "answer": "Yes, we have a mobile app available for download on the Apple and Google play stores."
+    },
+    {
+      "question": "What is your refund policy?",
+      "answer": "You can find more information about our refund policy on the refund policy page."
+    },
+    {
+      "question": "How can I update my contact information?",
+      "answer": "You can update your contact information on your profile page."
+    },
+    {
+      "question": "What is your business address?",
+      "answer": "Our business address can be found at the bottom of our website."
+    },
+    {
+      "question": "How long does a refund take?",
+      "answer": "Refunds usually take 7-10 business days to process."
+    },
+    {
+      "question": "Do you have a loyalty program?",
+      "answer": "Yes, we have a loyalty program. You can find more information on the loyalty program page."
+    },
+    {
+      "question": "Can I buy gift cards?",
+      "answer": "Yes, we have gift cards available for purchase on the gift cards page."
+    },
+    {
+      "question": "How do I redeem a gift card?",
+      "answer": "You can redeem your gift card at the checkout page."
+    },
+    {
+      "question": "Do gift cards expire?",
+      "answer": "No, our gift cards do not expire."
+    },
+    {
+      "question": "How can I unsubscribe from your newsletter?",
+      "answer": "You can unsubscribe from our newsletter by clicking on the unsubscribe button at the bottom of our emails."
+    },
+    {
+      "question": "How secure is your website?",
+      "answer": "Our website is very secure. We use the latest encryption technology to ensure that your data is safe."
+    },
+    {
+      "question": "What are the terms and conditions?",
+      "answer": "You can find the terms and conditions on the terms and conditions page."
+    },
+    {
+      "question": "Can I leave feedback for the support team?",
+      "answer": "Yes, you can leave feedback for the support team after your case has been resolved."
+    },
+    {
+      "question": "Do you have a blog?",
+      "answer": "Yes, we have a blog that you can read to learn more about us."
+    },
+    {
+      "question": "How do I create a wishlist?",
+      "answer": "You can create a wishlist on your profile page."
+    },
+    {
+      "question": "Can I share my wishlist?",
+      "answer": "Yes, you can share your wishlist with your friends and family."
+    },
+    {
+      "question": "Can I save payment methods?",
+      "answer": "Yes, you can save your payment methods for faster checkout."
+    },
+    {
+      "question": "Can I have multiple shipping addresses?",
+      "answer": "Yes, you can save multiple shipping addresses on your profile."
+    },
+    {
+      "question": "Do you have a size guide?",
+      "answer": "Yes, we have a size guide available on the product page."
+    },
+    {
+      "question": "Do you have sales?",
+      "answer": "Yes, we have sales every so often. Please subscribe to our newsletter to receive updates about sales."
+    },
+    {
+      "question": "What is your return address?",
+      "answer": "Our return address can be found on the return policy page."
+    },
+    {
+      "question": "Can I exchange an item?",
+      "answer": "Yes, you can exchange an item. Contact support to begin the exchange process."
+    },
+    {
+      "question": "What if my discount code does not work?",
+      "answer": "If your discount code does not work, make sure it is still valid and contact support if the problem persists."
+    },
+    {
+      "question": "Do you have a chat function?",
+      "answer": "Yes, we have a chat function on the website during business hours."
+    },
+    {
+      "question": "What if my order has not arrived?",
+      "answer": "If your order has not arrived, contact customer support immediately so that they can help you."
+    },
+    {
+      "question": "How do I become an affiliate?",
+      "answer": "You can find more information on how to become an affiliate on the affiliate page."
+    },
+    {
+      "question": "How can I report a bug?",
+      "answer": "Please contact the support team through our online contact form, or by calling 1234567890 to report a bug."
+    },
+    {
+      "question": "Are your products eco-friendly?",
+      "answer": "Many of our products are eco-friendly. Please check the product description for details."
+    },
+    {
+      "question": "Do you have student discounts?",
+      "answer": "Yes, we offer student discounts. Please contact us with proof of enrollment to receive a discount code."
+    },
+    {
+      "question": "Do you have a physical store?",
+      "answer": "No, we do not have a physical store. We are online only."
+    },
+    {
+      "question": "How can I write a product description?",
+      "answer": "You can learn how to write a product description on the vendor information page."
+    },
+    {
+      "question": "What is your company culture?",
+      "answer": "You can find information about our company culture on the 'About Us' page."
+    },
+    {
+      "question": "How can I become a vendor?",
+      "answer": "You can find more information on how to become a vendor on the vendor information page."
+    },
+    {
+      "question": "Do you have a public API?",
+      "answer": "Yes, we have a public API that you can use to integrate with our platform. Contact us for more information."
+    },
+    {
+      "question": "What is the best way to use your site?",
+      "answer": "The best way to use our site is to browse by categories, or use the search bar. You can also check out the 'Featured Products' section on the homepage."
+    },
+    {
+      "question": "How can I find items on sale?",
+      "answer": "You can find items on sale on the sales page."
+    },
+    {
+      "question": "Do you offer any classes?",
+      "answer": "Yes, we offer classes every so often. Please visit the classes page for more information."
+    },
+      {
+      "question":"How can I apply for a job?",
+      "answer":"You can apply for a job on the jobs page."
+      },
+     {
+       "question":"How can I change my username?",
+       "answer":"You can change your username on the profile page."
+     },
+     {
+         "question":"Can I track my referral points?",
+         "answer":"Yes, you can track your referral points on the referrals page."
+     },
+    {
+         "question":"What is the best way to contact support?",
+         "answer":"The best way to contact support is by filling out the form on the contact page."
+      },
+    {
+        "question":"Can I make suggestions for products?",
+        "answer":"Yes, we take product suggestions. You can send suggestions through our contact page."
+      },
+      {
+          "question":"How do I find your social media pages?",
+          "answer":"You can find our social media pages by clicking on the social media icons at the bottom of the site."
+      },
+    {
+        "question":"Can I get samples of your product?",
+        "answer":"Please contact our sales team for more information about product samples."
+    },
+     {
+      "question":"Do you offer custom orders?",
+      "answer":"Please contact our sales team to discuss the possibility of a custom order."
+    },
+     {
+         "question":"How do I contact the CEO?",
+         "answer":"The best way to contact the CEO is by mailing a letter to our business address."
+      },
+    {
+        "question":"What is your company history?",
+         "answer":"You can find information about our company history on the 'About Us' page."
+      },
+     {
+          "question":"Can I request a sponsorship?",
+          "answer":"You can request a sponsorship on the sponsorships page."
+      },
+      {
+         "question":"What is your mission statement?",
+          "answer":"You can find our mission statement on the 'About Us' page."
+      },
+      {
+          "question":"What is your vision statement?",
+          "answer":"You can find our vision statement on the 'About Us' page."
+      },
+       {
+          "question":"How can I get on your email list?",
+          "answer":"You can get on our email list by subscribing to our newsletter."
+      },
+       {
+          "question":"How can I change my language preferences?",
+          "answer":"You can change your language preferences on the settings page."
+        },
+      {
+          "question":"Can I donate to your organization?",
+          "answer":"You can donate to our organization on the donate page."
+      },
+      {
+          "question":"Do you have any patents?",
+          "answer":"Yes, we have patents. You can find more information on the patent page."
+      },
+    {
+       "question":"What if I forgot my username?",
+       "answer":"You can use the forgot username feature on the login page."
+     },
+      {
+       "question":"Do you offer gift wrapping?",
+        "answer":"Yes, we offer gift wrapping. You can add it at checkout."
+      },
+    {
+          "question":"Can I track my points?",
+          "answer":"Yes, you can track your points on the points page."
+      },
+    {
+        "question":"What are the security measures you take?",
+        "answer":"We take the utmost care to ensure that your information is secure. Please visit the security page for more details."
+      },
+    {
+       "question":"How do I view my cart?",
+       "answer":"You can view your cart at any time by clicking on the cart icon on the navigation bar."
+     },
+     {
+       "question":"What is your social responsibility?",
+        "answer":"You can find our social responsibility statement on the social responsibility page."
+      },
+     {
+          "question":"How can I see your terms of service?",
+          "answer":"You can see our terms of service on the terms of service page."
+      },
+      {
+          "question":"Do you use cookies?",
+          "answer":"Yes, we use cookies to provide you with a better browsing experience."
+      },
+      {
+       "question":"How do I add items to my cart?",
+        "answer":"You can add items to your cart by clicking the 'Add to Cart' button on the product page."
+       },
+    {
+      "question":"What happens if an item is out of stock after I order?",
+      "answer":"If an item is out of stock after you order, we will notify you and offer a refund or an alternative product."
+      },
+      {
+       "question":"Can I save my cart for later?",
+       "answer":"Yes, if you are logged into your account, your cart will be saved for later."
+       },
+      {
+        "question":"How can I clear my cache?",
+        "answer":"You can clear your cache in your browser settings."
+        },
+      {
+         "question":"What browsers are supported?",
+         "answer":"We support most modern web browsers including Chrome, Firefox, Safari, and Edge."
+        },
+      {
+          "question":"Do you have any video tutorials?",
+         "answer":"Yes, we have a video tutorials page. You can view the tutorials for more information."
+        },
+      {
+          "question":"How do I contact your sales team?",
+         "answer":"You can contact our sales team on the contact sales page."
+        },
+      {
+       "question":"What is your VAT number?",
+        "answer":"You can find our VAT number on our 'About Us' page."
+       },
+     {
+          "question":"How do I change my email?",
+        "answer":"You can change your email on the profile page."
+     },
+    {
+         "question":"What is your social media policy?",
+        "answer":"You can find our social media policy on the 'Terms of Service' page."
+       },
+   {
+       "question":"What is a good way to search on the website?",
+       "answer":"You can use our search function or browse through our categories."
+      },
+  {
+        "question":"How long does it take for my order to ship?",
+        "answer":"Orders typically ship within 1-2 business days."
+    },
+  {
+      "question":"Can I expedite my shipping?",
+      "answer":"Yes, you can expedite your shipping for an additional fee."
+    },
+  {
+     "question":"What should I do if my order is late?",
+     "answer":"If your order is late, please contact support."
+   },
+    {
+      "question":"How do I remove items from my cart?",
+      "answer":"You can remove items from your cart on the cart page."
+    },
+    {
+     "question":"What is your company ID?",
+      "answer":"You can find our company ID on the 'About Us' page."
+    },
+    {
+          "question":"Do you have a feedback form?",
+          "answer":"Yes, you can leave feedback on the contact us page."
+      },
+  {
+    "question":"What type of images should I use for reviews?",
+    "answer":"You can use any images you wish as long as they do not violate our terms of service."
+  },
+   {
+      "question":"Can I save addresses on my profile?",
+       "answer":"Yes, you can save multiple addresses on your profile."
+    },
+  {
+      "question":"Can I use multiple payment methods?",
+        "answer":"No, you can only use one payment method per order."
+      },
+    {
+      "question":"How do I see my order history?",
+      "answer":"You can see your order history on your profile page."
+      },
+  {
+     "question":"How do I print an invoice?",
+      "answer":"You can print an invoice on the order details page."
+    },
+  {
+     "question":"Can I edit my billing information?",
+      "answer":"Yes, you can edit your billing information on your profile page."
+      },
+  {
+    "question":"How do I rate an item?",
+    "answer":"You can rate an item on the product page by clicking on the rating stars."
+  },
+  {
+   "question":"Can I copy and paste descriptions?",
+    "answer":"Please do not copy and paste descriptions for products. All product descriptions must be original."
+  },
+    {
+          "question":"How can I make an offer on a product?",
+          "answer":"You can make an offer on a product by using the 'Make an Offer' feature."
+      },
+   {
+     "question":"How do I contact customer support on weekends?",
+      "answer":"You can contact customer support by email on weekends, or use the contact form."
+    },
+    {
+      "question":"What information do you need to create an account?",
+      "answer":"You need your name, email, and a password to create an account."
+    },
+    {
+      "question":"What happens if I enter the wrong information?",
+      "answer":"If you enter the wrong information, please edit it on your profile page."
+    },
+  {
+     "question":"What should I do if my item does not fit?",
+     "answer":"If your item does not fit, you can exchange it for another size."
+  },
+    {
+      "question":"Can I see what is trending?",
+      "answer":"Yes, you can view the trending products on the trending page."
+    },
+    {
+      "question":"Can I filter by price?",
+      "answer":"Yes, you can filter by price on the search and category pages."
+    },
+  {
+      "question":"Can I filter by rating?",
+        "answer":"Yes, you can filter by rating on the search and category pages."
+      },
+  {
+    "question":"Can I filter by tags?",
+    "answer":"Yes, you can filter by tags on the search and category pages."
+  },
+  {
+    "question":"Do you have a size conversion chart?",
+    "answer":"Yes, we have a size conversion chart on the product page."
+  },
+    {
+      "question":"How do I know my order was processed?",
+      "answer":"You will receive an email when your order is processed."
+    },
+  {
+     "question":"What do you do to protect my information?",
+     "answer":"We take the necessary precautions to ensure the safety of your data. Please see our privacy policy for more information."
+    },
+    {
+       "question":"Can I send a purchase as a gift?",
+       "answer":"Yes, you can send a purchase as a gift."
+      },
+  {
+     "question":"How can I add a gift note?",
+     "answer":"You can add a gift note at the checkout page."
+    },
+  {
+    "question":"Do you have a forum?",
+    "answer":"Yes, we have a forum where you can interact with other users. Click on the forum page in the navigation bar."
+  },
+  {
+      "question":"What if I forgot the answer to my security questions?",
+      "answer":"You can reset your security questions on the settings page."
+  },
+   {
+      "question":"How can I see what's new?",
+       "answer":"You can see what is new on the new arrivals page."
+      },
+  {
+    "question":"What are your hours for live chat?",
+    "answer":"Our live chat hours are 9 AM to 5 PM, Monday to Friday."
+  },
+    {
+     "question":"Can I schedule a call with support?",
+      "answer":"Yes, you can schedule a call with support by contacting our support team."
+      },
+    {
+          "question":"Can I apply a coupon after purchasing an item?",
+         "answer":"No, you cannot apply a coupon after purchasing an item."
+      },
+     {
+       "question":"How do I use the search bar?",
+       "answer":"You can use the search bar by typing in the name of the item that you are looking for."
+     }
+  ]
