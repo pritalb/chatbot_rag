@@ -9,6 +9,9 @@ import os
 from dotenv import load_dotenv
 
 
+# Ignore the deprecation warning for HuggingFaceHub. HuggingFaceEndpoint has a bug that stops it from working as mentioned in the forum post:
+# https://github.com/langchain-ai/langchain/issues/18321
+
 load_dotenv()
 
 def create_rag_chain_faiss(model_name, index_path, docstore_path, hf_llm_id):
