@@ -21,3 +21,6 @@ venv/
 
 # Faiss index file
 data/*.pkl
+
+#environment variables
+.env
