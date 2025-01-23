@@ -31,9 +31,14 @@ def create_rag_chain_faiss(model_name, index_path, docstore_path, hf_llm_id):
     )
 
     prompt_template = """
-    You are a helpful customer support chatbot. Use the following pieces of context to answer the question at the end. If you don't know the answer, just say that you do not know, don't try to make up an answer.
+    You are a helpful customer support chatbot. Use the following pieces of context to answer the question at the end. 
+    If you don't know the answer, just say that you do not know, don't try to make up an answer.
+    
     Context:
     {context}
+
+    Question: {question}
+    Answer:
     """
 
     prompt = ChatPromptTemplate.from_messages(
@@ -56,7 +61,7 @@ def create_rag_chain_faiss(model_name, index_path, docstore_path, hf_llm_id):
 
 def get_chatbot_response(question, model_name, index_path, docstore_path, hf_llm_id):
     qa_chain = create_rag_chain_faiss(model_name, index_path, docstore_path, hf_llm_id)
-    return qa_chain.invoke({"input": question})
+    return qa_chain.invoke({"input": question, "question": question})
 
 if __name__ == "__main__":
     model_name = "sentence-transformers/all-mpnet-base-v2"
