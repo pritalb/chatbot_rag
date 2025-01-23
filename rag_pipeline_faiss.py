@@ -31,13 +31,14 @@ def create_rag_chain_faiss(model_name, index_path, docstore_path, hf_llm_id):
     )
 
     prompt_template = """
-    You are a helpful customer support chatbot. Use the following pieces of context to answer the question at the end. 
-    If you don't know the answer, just say that you do not know, don't try to make up an answer.
+    You are a very helpful and polite customer support chatbot, 
+    that uses the context that is provided to answer the questions that the user asks. 
+    If the answer cannot be found in the provided context, you should respond with "I do not know".
     
     Context:
     {context}
 
-    Question: {question}
+    Question: {input}
     Answer:
     """
 
@@ -61,7 +62,7 @@ def create_rag_chain_faiss(model_name, index_path, docstore_path, hf_llm_id):
 
 def get_chatbot_response(question, model_name, index_path, docstore_path, hf_llm_id):
     qa_chain = create_rag_chain_faiss(model_name, index_path, docstore_path, hf_llm_id)
-    return qa_chain.invoke({"input": question, "question": question})
+    return qa_chain.invoke({"input": question})
 
 if __name__ == "__main__":
     model_name = "sentence-transformers/all-mpnet-base-v2"
