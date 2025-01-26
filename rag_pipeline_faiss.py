@@ -29,7 +29,7 @@ def create_rag_chain_faiss(model_name, index_path, docstore_path, hf_llm_id):
         embedding_function=embeddings,
         index=index,
         docstore=docstore,
-        index_to_docstore_id={i : str(i) for i in range(len(docstore._dict))},
+        index_to_docstore_id={i: str(i) for i in range(len(docstore._dict))},
     )
 
     prompt_template = """
@@ -58,7 +58,7 @@ def create_rag_chain_faiss(model_name, index_path, docstore_path, hf_llm_id):
     llm = huggingface_hub.HuggingFaceHub(
         repo_id=hf_llm_id,
         huggingfacehub_api_token=os.getenv("HUGGINGFACEHUB_API_TOKEN"),
-        model_kwargs={"temperature": 0, "max_length": 1024, "max_new_tokens": 250}
+        model_kwargs={"temperature": 0, "max_length": 1024, "max_new_tokens": 250},
     )
 
     document_chain = create_stuff_documents_chain(llm, prompt)
