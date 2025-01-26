@@ -8,10 +8,14 @@ import logging
 
 load_dotenv()
 app = FastAPI()
-logging.basicConfig(level=logging.INFO, format="%(asctime)s - %(levelname)s - %(message)s")
+logging.basicConfig(
+    level=logging.INFO, format="%(asctime)s - %(levelname)s - %(message)s"
+)
+
 
 class Question(BaseModel):
     question: str
+
 
 @app.post("/chat/")
 async def chat_endpoint(question: Question):
@@ -22,10 +26,13 @@ async def chat_endpoint(question: Question):
     docstore_path = "./data/faiss_docstore.pkl"
     hf_llm_id = "google/flan-t5-small"
 
-    response = get_chatbot_response(question.question, model_name, index_path, docstore_path, hf_llm_id)
+    response = get_chatbot_response(
+        question.question, model_name, index_path, docstore_path, hf_llm_id
+    )
 
     logging.info(f"Response: {response}")
     return {"response": response}
+
 
 if __name__ == "__main__":
     uvicorn.run(app, host="0.0.0.0", port=8000)
