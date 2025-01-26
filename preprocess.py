@@ -7,7 +7,7 @@ def preprocess_text(text):
     text = text.lower()
     text = re.sub(r"http\S+|www\S+|https\S+", "", text, flags=re.MULTILINE)
     text = text.translate(str.maketrans("", "", string.punctuation))
-    return  text
+    return text
 
 
 def load_faq(filepath):
@@ -24,7 +24,7 @@ def process_data(filepath):
         processed_data.append(
             {
                 "question": preprocess_text(item["question"]),
-                "answer": preprocess_text(item["answer"])
+                "answer": preprocess_text(item["answer"]),
             }
         )
 

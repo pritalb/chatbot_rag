@@ -8,9 +8,9 @@ from langchain_core.documents import Document
 
 
 def create_and_populate_faiss_index(embeddings, index_path, docstore_path):
-    embeddings_array = np.array(
-        [item['embedding'] for item in embeddings]
-    ).astype('float32')
+    embeddings_array = np.array([item['embedding'] for item in embeddings]).astype(
+        'float32'
+    )
     dimension = embeddings_array.shape[1]
 
     index = faiss.IndexFlatL2(dimension)

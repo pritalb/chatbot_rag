@@ -17,7 +17,7 @@ load_dotenv()
 
 
 def create_rag_chain_faiss(model_name, index_path, docstore_path, hf_llm_id):
-    embeddings = HuggingFaceEmbeddings(model_name = model_name)
+    embeddings = HuggingFaceEmbeddings(model_name=model_name)
 
     with open(index_path, "rb") as f:
         index = pickle.load(f)
@@ -29,7 +29,7 @@ def create_rag_chain_faiss(model_name, index_path, docstore_path, hf_llm_id):
         embedding_function=embeddings,
         index=index,
         docstore=docstore,
-        index_to_docstore_id={i : str(i) for i in range(len(docstore._dict))}
+        index_to_docstore_id={i : str(i) for i in range(len(docstore._dict))},
     )
 
     prompt_template = """
