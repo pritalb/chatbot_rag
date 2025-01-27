@@ -1,0 +1,24 @@
+# Git
+.git
+
+# Python virtual environment
+venv/
+
+# Python cache
+__pycache__/
+*.pyc
+*.pyo
+
+# Log files
+*.log
+
+# macOS
+.DS_Store
+
+# IDE specific
+.idea/
+*.iml
+.vscode/
+
+#data directory
+data/
