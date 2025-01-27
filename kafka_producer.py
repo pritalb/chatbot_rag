@@ -28,3 +28,4 @@ if __name__ == "__main__":
     topic_name = "user_queries"
     num_messages = 10
     produce_data(topic_name, num_messages)
+    
