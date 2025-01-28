@@ -52,6 +52,7 @@ async def chat_endpoint(question: Question):
             for message in consumer:
                 if message.value["original_message"]["message_id"] == message_id:
                     logging.info(f"Response received for message id: {message_id} in {time.time() - start_time} seconds")
+                    logging.info(f"The response is {message.value}")
                     return {
                         "response": message.value["transformed_message"]
                     }
