@@ -1,3 +1,4 @@
+version: "3.9"
 services:
   chatbot:
     build: .
@@ -5,3 +6,42 @@ services:
       - "8000:8000"
     environment:
       - PYTHONUNBUFFERED=1
+      - HUGGINGFACEHUB_API_TOKEN=${HUGGINGFACEHUB_API_TOKEN}
+      - KAFKA_HOST=kafka
+    depends_on:
+      - kafka
+    networks:
+      - app-net
+  kafka:
+    image: 'apache/kafka-native'
+    ports:
+      - '9092:9092'
+    environment:
+      KAFKA_LISTENERS: CONTROLLER://localhost:9091,HOST://0.0.0.0:9092,DOCKER://0.0.0.0:9093
+      KAFKA_ADVERTISED_LISTENERS: HOST://localhost:9092, DOCKER://kafka:9093
+      KAFKA_LISTENER_SECURITY_PROTOCOL_MAP: CONTROLLER:PLAINTEXT,DOCKER:PLAINTEXT,HOST:PLAINTEXT
+
+      KAFKA_NODE_ID: 1
+      KAFKA_PROCESS_ROLES: broker,controller
+      KAFKA_CONTROLLER_LISTENER_NAMES: CONTROLLER
+      KAFKA_CONTROLLER_QUORUM_VOTERS: 1@localhost:9091
+
+      KAFKA_INTER_BROKER_LISTENER_NAME: DOCKER
+      KAFKA_OFFSETS_TOPIC_REPLICATION_FACTOR: 1
+    networks:
+      - app-net
+  response_generator:
+    build: .
+    command: python response_generator.py
+    environment:
+      - PYTHONUNBUFFERED=1
+      - HUGGINGFACEHUB_API_TOKEN=${HUGGINGFACEHUB_API_TOKEN}
+      - KAFKA_HOST=kafka
+    depends_on:
+        - kafka
+    networks:
+      - app-net
+
+networks:
+  app-net:
+    driver: bridge

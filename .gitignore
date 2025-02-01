@@ -24,3 +24,9 @@ data/*.pkl
 
 #environment variables
 .env
+
+# airflow
+airflow/logs/
+airflow/plugins/
+airflow/docker-compose.yml
+airflow/.env
