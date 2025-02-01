@@ -17,7 +17,7 @@ def process_queries(
     index_path,
     metadata_path,
     hf_llm_id,
-    bootstrap_servers='kafka:9093',
+    bootstrap_servers="kafka:9093",
 ):
     consumer = KafkaConsumer(
         input_topic,
