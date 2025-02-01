@@ -28,6 +28,7 @@ services:
 
       KAFKA_INTER_BROKER_LISTENER_NAME: DOCKER
       KAFKA_OFFSETS_TOPIC_REPLICATION_FACTOR: 1
+      KAFKA_CREATE_TOPICS: "user_queries:1:1,llm_responses:1:1"
     networks:
       - app-net
   response_generator:
