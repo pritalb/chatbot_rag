@@ -17,7 +17,7 @@ def process_queries(
     index_path,
     metadata_path,
     hf_llm_id,
-    bootstrap_servers='kafka:9093'
+    bootstrap_servers='kafka:9093',
 ):
     consumer = KafkaConsumer(
         input_topic,
@@ -25,11 +25,11 @@ def process_queries(
         auto_offset_reset="earliest",
         enable_auto_commit=True,
         group_id="response-generator-group",
-        value_deserializer=lambda x: json.loads(x.decode("utf-8"))
+        value_deserializer=lambda x: json.loads(x.decode("utf-8")),
     )
     producer = KafkaProducer(
         bootstrap_servers=os.getenv("KAFKA_HOST", "127.0.0.1") + ":9093",
-        value_serializer=lambda x: json.dumps(x).encode("utf-8")
+        value_serializer=lambda x: json.dumps(x).encode("utf-8"),
     )
     qa_chain = create_rag_chain_faiss(model_name, index_path, metadata_path, hf_llm_id)
     for message in consumer:
@@ -39,7 +39,7 @@ def process_queries(
             response = qa_chain.invoke({"input": data["query"]})
             transformed_data = {
                 "original_message": data,
-                "transformed_message": response['answer']
+                "transformed_message": response["answer"],
             }
             producer.send(output_topic, value=transformed_data)
             logging.info(f"Generated response for message id:{data['message_id']}")

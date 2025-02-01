@@ -18,7 +18,7 @@ logging.basicConfig(
 
 producer = KafkaProducer(
     bootstrap_servers=os.getenv("KAFKA_HOST", "127.0.0.1") + ":9093",
-    value_serializer=lambda x: json.dumps(x).encode("utf-8")
+    value_serializer=lambda x: json.dumps(x).encode("utf-8"),
 )
 consumer = KafkaConsumer(
     "llm_responses",
@@ -26,7 +26,7 @@ consumer = KafkaConsumer(
     auto_offset_reset="earliest",
     enable_auto_commit=True,
     group_id="api-consumer",
-    value_deserializer=lambda x: json.loads(x.decode("utf-8"))
+    value_deserializer=lambda x: json.loads(x.decode("utf-8")),
 )
 
 
@@ -40,20 +40,19 @@ async def chat_endpoint(question: Question):
         message_id = str(uuid4())
         logging.info(f"Received question: {question.question} id:{message_id}")
         data = {"message_id": message_id, "query": question.question}
-        producer.send("user_queries", value = data)
+        producer.send("user_queries", value=data)
         start_time = time.time()
         while True:
-           for message in consumer:
-               if message.value["original_message"]["message_id"] == message_id:
+            for message in consumer:
+                if message.value["original_message"]["message_id"] == message_id:
                     logging.info(
-                       f"Response received for message id:{message_id} in {time.time() - start_time} seconds"
+                        f"Response received for message id:{message_id} in {time.time() - start_time} seconds"
                     )
                     return {"response": message.value["transformed_message"]}
-               if time.time() - start_time > 30:
+                if time.time() - start_time > 30:
                     raise HTTPException(
                         status_code=504, detail="Timeout waiting for response from LLM"
                     )
-
 
     except Exception as e:
         logging.error(f"Error processing request: {e}")
